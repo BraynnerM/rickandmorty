@@ -1,6 +1,6 @@
-async function getCharacters(urlBase) {
+async function getCharacters(urlBase, page) {
   try {
-    const response = await fetch(`${urlBase}/character`);
+    const response = await fetch(`${urlBase}/character?page=${page}`);
     const characters = await response.json();
     return characters.results;
   } catch (error) {
@@ -8,9 +8,9 @@ async function getCharacters(urlBase) {
   }
 }
 
-async function getEpisodes(urlBase) {
+async function getEpisodes(urlBase, page) {
   try {
-    const response = await fetch(`${urlBase}/episode`);
+    const response = await fetch(`${urlBase}/episode?page=${page}`);
     const episodes = await response.json();
     return episodes.results;
   } catch (error) {
@@ -18,9 +18,9 @@ async function getEpisodes(urlBase) {
   }
 }
 
-async function getLocations(urlBase) {
+async function getLocations(urlBase, page) {
   try {
-    const response = await fetch(`${urlBase}/location`);
+    const response = await fetch(`${urlBase}/location?page=${page}`);
     const locations = await response.json();
     return locations.results;
   } catch (error) {
