@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 //import { Link } from 'react-router-dom';
 //import styled from 'styled-components';
 
-const MainContent = () => {
+const MainContentComponent = () => {
   const urlBase = "https://rickandmortyapi.com/api";
   const [characters, setCharacters] = useState([]);
   const [page, setPage] = useState(1);
@@ -72,4 +72,4 @@ const MainContent = () => {
   );
 };
 
-export { MainContent };
+export default MainContentComponent;

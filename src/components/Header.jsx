@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
@@ -5,9 +7,9 @@ const Header = () => {
         <img src="src\assets\rick-and-morty-header.png" alt="RickAndMorty-Logo" />        
       </div>
       <div className="header-routes">
-      <a href="">Personagens</a>
-      <a href="">Episódios</a>
-      <a href="">Lugares</a>
+      <Link to="/">Personagens</Link>
+      <Link to="/episodes">Episódios</Link>
+      <Link to="/places">Lugares</Link>
       </div>
     </header>
   );
