@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 //import { useParams } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 //import styled from 'styled-components';
-
+import './MainContent.css'
 const MainContentComponent = () => {
   const urlBase = "https://rickandmortyapi.com/api";
   const [characters, setCharacters] = useState([]);
