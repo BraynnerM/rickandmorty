@@ -1,0 +1,14 @@
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card img {
+    width: 300px;
+}

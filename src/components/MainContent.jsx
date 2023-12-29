@@ -29,9 +29,9 @@ const MainContentComponent = () => {
 
   return (
     <section>
-      <ul>
+      <ul className="cards-list">
         {characters.map((character, index) =>
-          <li key={index}>
+          <li className="card" key={index}>
             <img src={character.image} alt="character-img" />
             <span>
               Name: {character.name}

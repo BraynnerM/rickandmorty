@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-routes {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 40px;
+}
