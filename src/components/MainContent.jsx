@@ -4,17 +4,19 @@ import { useEffect, useState } from "react";
 //import { useParams } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 //import styled from 'styled-components';
-import './MainContent.css'
+import "./MainContent.css";
 const MainContentComponent = () => {
   const urlBase = "https://rickandmortyapi.com/api";
   const [characters, setCharacters] = useState([]);
+  const [pagesNumber, setPagesNumber] = useState([]);
   const [page, setPage] = useState(1);
   //const { id } = useParams();
   useEffect(
     () => {
       const fetchData = async () => {
         const data = await getCharacters(urlBase, page);
-        setCharacters(data);
+        setCharacters(data.results);
+        setPagesNumber(data.info.pages);
         window.scrollTo({ top: 0 });
       };
       fetchData();
@@ -58,15 +60,13 @@ const MainContentComponent = () => {
         )}
       </ul>
       <div className="pagination">
-        <a href="" onClick={e => handlePageClick(e, 1)}>
-          1
-        </a>
-        <a href="" onClick={e => handlePageClick(e, 2)}>
-          2
-        </a>
-        <a href="" onClick={e => handlePageClick(e, 3)}>
-          3
-        </a>
+        {Array.from({ length: pagesNumber }, (_, i) =>
+          <div key={i}>
+            <a href="#" onClick={e => handlePageClick(e, i + 1)}>
+              {i + 1}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

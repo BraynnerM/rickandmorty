@@ -5,12 +5,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-title">
-        <img src="src\assets\rick-and-morty-header.png" alt="RickAndMorty-Logo" />        
+        <Link to="/">
+          <img src="src\assets\rick-and-morty-header.png" alt="RickAndMorty-Logo" /> 
+        </Link>               
       </div>
       <div className="header-routes">
-      <Link to="/">Personagens</Link>
-      <Link to="/episodes">Episódios</Link>
-      <Link to="/places">Lugares</Link>
+      <Link to="/">Characters</Link>
+      <Link to="/episodes">Episodes</Link>
+      <Link to="/places">Places</Link>
       </div>
     </header>
   );
