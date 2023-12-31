@@ -1,8 +1,48 @@
-# React + Vite
+# Api Rick and Morty
+Este é apenas uma solução de consumo de api do Rick and Morty que desenvolvi apenas para fixar meus conhecimentos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Índice
 
-Currently, two official plugins are available:
+- [Visão geral](#visão-geral)
+  - [O desafio](#o-desafio)
+  - [Captura de tela](#captura-de-tela)
+  - [Links](#links)
+- [Meu processo](#meu-processo)
+  - [Construído com](#construído-com)   
+  - [Recursos úteis](#recursos-úteis)
+- [Autor](#autor)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visão geral
+
+### O desafio
+
+- Consumir API do Rick and Morty
+
+### Captura de tela
+
+![](./frontend/public/assets/screenshot.gif)
+
+### Links
+
+- URL da solução: [Github](https://github.com/BraynnerM/rickandmorty)
+- URL do App na Vercel: [Rick and Morty](https://rickandmorty.vercel.app/)
+
+## Meu processo
+
+### Construído com
+
+- Marcação semântica HTML5 
+- Propriedades personalizadas do CSS
+- React.JS
+
+### Recursos úteis
+
+- [Screen to Gif](https://www.screentogif.com/) - Utilizei para criar as screenshots.
+
+## Autor
+
+- Linkedin - [BraynnerM](https://www.linkedin.com/in/braynner/)
+- Github - [BraynnerM](https://github.com/BraynnerM)
+- Frontend Mentor - [BraynnerM](https://www.frontendmentor.io/profile/BraynnerM)
+- Twitter - [BraynnerMarques](https://twitter.com/BraynnerMarques)
+- E-mail - [braynnermarques@hotmail.com](mailto:braynnermarques@hotmail.com)
