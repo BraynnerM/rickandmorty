@@ -1,0 +1,11 @@
+#episodes {
+    min-width: 300px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#episodes span {
+    font-size: 20px;
+}

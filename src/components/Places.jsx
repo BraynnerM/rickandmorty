@@ -30,7 +30,7 @@ const PlacesComponent = () => {
     <section>
       <ul className="cards-list">
         {places.map((place, index) =>
-          <li className="card" key={index}>
+          <li className="card places" key={index}>
             <span>
               Name: {place.name}
             </span>
