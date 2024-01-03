@@ -27,7 +27,7 @@ const EpisodesComponent = () => {
   };
 
   return (
-    <section>
+    <section className="main-content">
       <ul className="cards-list">
         {episodes.map((episode, index) =>
           <li className="card" id='episodes' key={index}>

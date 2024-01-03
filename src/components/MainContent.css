@@ -1,7 +1,13 @@
+.main-content {
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    justify-content: center;
 }
 
 .card {

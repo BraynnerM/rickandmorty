@@ -30,7 +30,7 @@ const MainContentComponent = () => {
   };
 
   return (
-    <section>
+    <section className="main-content">
       <ul className="cards-list">
         {characters.map((character, index) =>
           <li className="card" key={index}>

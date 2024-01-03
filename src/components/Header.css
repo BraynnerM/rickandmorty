@@ -2,8 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+    max-height: 18%;
 }
 
+.header-title img {
+    width: 380px;
+}
 .header-routes {
     display: flex;
     justify-content: space-between;
@@ -13,13 +23,13 @@
 
 .header-routes a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
 .header-routes a:hover {
     transform: scale(1.3);
-    color: rgba(51, 51, 51, 0.938);
+    color: rgba(255, 255, 255, 0.81);
 }

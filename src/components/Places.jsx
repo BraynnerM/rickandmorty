@@ -27,7 +27,7 @@ const PlacesComponent = () => {
   };
 
   return (
-    <section>
+    <section className="main-content">
       <ul className="cards-list">
         {places.map((place, index) =>
           <li className="card places" key={index}>
