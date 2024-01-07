@@ -63,3 +63,15 @@
     color: #FFF;
 }
 
+.overlay {
+    position: fixed;
+    top: 40vh;    
+}
+
+.overlay img {
+    scale: 2;
+    border: 3px solid rgba(0, 0, 0, 0.633);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+    border-radius: 15px;
+    cursor: pointer;
+}
