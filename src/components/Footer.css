@@ -22,25 +22,24 @@
   }
   
   .author {
-    font-weight: bold;
-     
+    font-weight: bold;    
   }
   
   .social-links {
-    
-    
+     
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
   }
   
   .social-links a {
     color: #fff;  
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
-    padding-right: 10px;
-  }
+       
+  }  
   
   .social-links a:hover {
     transform: scale(1.3);
