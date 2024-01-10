@@ -1,5 +1,5 @@
 //import React from 'react'
-import { getLocations } from "../services/requestapi";
+import { getLocations } from "../services/RequestApi.jsx";
 import { useEffect, useState } from "react";
 import "./Places.css";
 

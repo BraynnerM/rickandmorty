@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCharacters } from "../services/requestapi";
+import { getCharacters } from "../services/RequestApi.jsx";
 import "./MainContent.css";
 
 const MainContentComponent = () => {

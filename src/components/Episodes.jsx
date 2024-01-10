@@ -1,5 +1,5 @@
 //import React from 'react'
-import { getEpisodes } from "../services/requestapi";
+import { getEpisodes } from "../services/RequestApi.jsx";
 import { useEffect, useState } from "react";
 import "./Episodes.css";
 const EpisodesComponent = () => {
