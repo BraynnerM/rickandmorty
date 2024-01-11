@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="header-title">
         <Link to="/">
-          <img src="public\src\assets\rick-and-morty-header.png" alt="RickAndMorty-Logo" /> 
+          <img src="../src/assets\rick-and-morty-header.png" alt="RickAndMorty-Logo" /> 
         </Link>               
       </div>
       <div className="header-routes">
