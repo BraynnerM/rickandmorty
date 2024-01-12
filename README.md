@@ -20,7 +20,7 @@ Este é apenas uma solução de consumo de api do Rick and Morty que desenvolvi 
 
 ### Captura de tela
 
-![](./frontend/public/assets/screenshot.gif)
+![](./public/assets/screenshot.gif)
 
 ### Links
 
