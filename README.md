@@ -25,7 +25,7 @@ Este é apenas uma solução de consumo de api do Rick and Morty que desenvolvi 
 ### Links
 
 - URL da solução: [Github](https://github.com/BraynnerM/rickandmorty)
-- URL do App na Vercel: [Rick and Morty](https://rickandmorty.vercel.app/)
+- URL do App na Vercel: [Rick and Morty](https://rickandmorty-flame.vercel.app/)
 
 ## Meu processo
 
