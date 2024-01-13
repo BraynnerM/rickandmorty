@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 20px;
+    font-weight: 900;
+    margin-top: 30px;   
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.pagination a.active {    
+    color: #fff;
+    font-size: 20px; 
+  }
+
+.pagination a:hover {
+    transform: scale(1.6);
+    color: #FFF;
+}

@@ -1,3 +1,4 @@
+import Pagination from "./Pagination.jsx";
 import { useEffect, useState } from "react";
 import { getCharacters } from "../services/RequestApi.jsx";
 import "./MainContent.css";
@@ -11,18 +12,21 @@ const MainContentComponent = () => {
   const [showImage, setShowImage] = useState(false);
   const [imagePath, setImagePath] = useState("");
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getCharacters(urlBase, page);
-      setCharacters(data.results);
-      setPagesNumber(data.info.pages);
-      setCurrentPage(page);
-      window.scrollTo({ top: 0 });
-    };
-    fetchData();
-  }, [page, urlBase]);
+  useEffect(
+    () => {
+      const fetchData = async () => {
+        const data = await getCharacters(urlBase, page);
+        setCharacters(data.results);
+        setPagesNumber(data.info.pages);
+        setCurrentPage(page);
+        window.scrollTo({ top: 0 });
+      };
+      fetchData();
+    },
+    [page, urlBase]
+  );
 
-  const toggleImage = (imagePath) => {
+  const toggleImage = imagePath => {
     setImagePath(imagePath);
     setShowImage(!showImage);
   };
@@ -35,39 +39,47 @@ const MainContentComponent = () => {
   return (
     <section className="main-content">
       <ul className="cards-list">
-        {characters.map((character, index) => (
-          <li className="card" key={index} onClick={() => toggleImage(character.image)}>
+        {characters.map((character, index) =>
+          <li
+            className="card"
+            key={index}
+            onClick={() => toggleImage(character.image)}
+          >
             <img src={character.image} alt="character-img" />
-            <span>Name: {character.name}</span>
-            <span>Episodes: {character.episode.length}</span>
-            <span>Gender: {character.gender}</span>
-            <span>Location: {character.location.name}</span>
-            <span>Origin: {character.origin.name}</span>
-            <span>Specie: {character.species}</span>
-            <span>Status: {character.status}</span>
-          </li>
-        ))}
-        {showImage && (
-          <div className="overlay" onClick={() => toggleImage("")}>
-            <span className="close-btn" onClick={() => toggleImage("")}>
+            <span>
+              Name: {character.name}
             </span>
-            <img src={imagePath} alt="Imagem em Tamanho Grande" />
-          </div>
+            <span>
+              Episodes: {character.episode.length}
+            </span>
+            <span>
+              Gender: {character.gender}
+            </span>
+            <span>
+              Location: {character.location.name}
+            </span>
+            <span>
+              Origin: {character.origin.name}
+            </span>
+            <span>
+              Specie: {character.species}
+            </span>
+            <span>
+              Status: {character.status}
+            </span>
+          </li>
         )}
+        {showImage &&
+          <div className="overlay" onClick={() => toggleImage("")}>
+            <span className="close-btn" onClick={() => toggleImage("")} />
+            <img src={imagePath} alt="Imagem em Tamanho Grande" />
+          </div>}
       </ul>
-      <div className="pagination">
-        {Array.from({ length: pagesNumber }, (_, i) => (
-          <div key={i}>
-            <a
-              href="#"
-              onClick={(e) => handlePageClick(e, i + 1)}
-              className={currentPage === i + 1 ? "active" : ""}
-            >
-              {i + 1}
-            </a>
-          </div>
-        ))}
-      </div>
+      <Pagination
+        pagesNumber={pagesNumber}
+        handlePageClick={handlePageClick}
+        currentPage={currentPage}
+      />
     </section>
   );
 };
