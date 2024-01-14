@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./pagination.css"
+import "./Pagination.css"
 const Pagination = ({pagesNumber, handlePageClick, currentPage} ) => {
     
   return (
