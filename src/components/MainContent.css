@@ -3,14 +3,19 @@
     margin-bottom: 110px;      
 }
 
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;    
+}
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    padding: 0;
-    
-          
+    padding: 0;     
 }
 
 .card {
