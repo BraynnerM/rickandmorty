@@ -13,5 +13,5 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #333333d0;  
     
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
